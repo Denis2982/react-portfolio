@@ -1,0 +1,36 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.header {
+    padding: 20px 0;
+    background: $headerbg;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
+
+    &__list-item {
+    }
+
+    &__list-link {
+        @include text($ff, 700, 18px, 25px, $title);
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    span {
+        @include text($ff, 800, 20px, 27px, $title);
+        letter-spacing: -0.5px;
+    }
+}

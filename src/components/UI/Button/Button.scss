@@ -1,0 +1,16 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 48px;
+    background: $bglink;
+    border-radius: 4px;
+    cursor: pointer;
+    span {
+        @include text($ff, 600, 18px, 25px, $white);
+    }
+}

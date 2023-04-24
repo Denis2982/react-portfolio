@@ -1,0 +1,28 @@
+@import 'src/scss/vars';
+@import 'src/scss/mixins';
+
+.about {
+    margin-top: 129px;
+    margin-bottom: 145px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }	
+	&__title {
+        @include text($ff, 700, 54px, 64px, $title);        
+        letter-spacing: -0.5px;
+        margin-bottom: 24px;
+        max-width: 506px;
+	}
+	&__text {
+        @include text($ff, 600, 20px, 30px, $text);
+        letter-spacing: -0.5px;
+        margin-bottom: 88px;
+        max-width: 395px;
+	}
+	&__image {
+        padding-right: 106px;
+	}
+}

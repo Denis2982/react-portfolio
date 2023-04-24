@@ -1,37 +1,60 @@
-@import 'src/scss/vars';
-@import 'src/scss/mixins';
+@import "src/scss/vars";
+@import "src/scss/mixins";
 
 .header {
-    padding: 20px 0;
-    background: $headerbg;
-    
+  padding: 20px 0;
+  background: $headerbg;
 
-    &__container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__list {
-        display: flex;
-        align-items: center;
-        gap: 56px;
-    }
-
-    &__list-item {
-    }
-
-    &__list-link {
-        @include text($ff, 700, 18px, 25px, $title);
-    }
-}
-
-.logo {
+  &__container {
     display: flex;
     align-items: center;
-    gap: 11px;
-    span {
-        @include text($ff, 800, 20px, 27px, $title);
-        letter-spacing: -0.5px;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  &__list-link {
+    @include text($ff, 700, 18px, 25px, $title);
+    transition: $transition;
+    &:hover {
+        color: $white;        
     }
+    &::before {
+        content: '';    
+        position: absolute;
+        left: 0;
+        top: 100%;    
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $white;
+        opacity: 0;
+        transition: $transition;
+    }
+    &.active {
+        color: $white;
+        position: relative;        
+    }
+    &.active::before {
+        opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  span {
+    @include text($ff, 800, 20px, 27px, $title);
+    letter-spacing: -0.5px;
+  }
 }

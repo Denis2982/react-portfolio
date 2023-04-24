@@ -1,11 +1,9 @@
-import Contact from "../../components/Contact/Contact";
-
-
+import Contactsc from "../../components/Contactsc/Contactsc";
 
 export default function Contacts() {
   return (
     <>      
-      <Contact />
+      <Contactsc />
     </>
   )
 }

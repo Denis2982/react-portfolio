@@ -1,0 +1,23 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.visual {
+  &__container {
+    margin-bottom: 240px;
+  }
+  &__title {
+    @include text($ff, 700, 36px, 49px, $title);
+    font-family: "Manrope";
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-bottom: 65px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  &__card {
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.contact {
+  &__container {
+    margin-bottom: 124px;
+    text-align: center;
+  }
+
+  &__title {
+    @include text($ff, 700, 36px, 49px, $title);      
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+  }
+
+  &__desc {
+    @include text($ff, 600, 26px, 38px, $text);
+    letter-spacing: -0.5px;
+    margin-bottom: 48px;
+    max-width: 520px;
+  }
+}

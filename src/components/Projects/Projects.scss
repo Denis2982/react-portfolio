@@ -1,0 +1,17 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.project {
+  &__container {
+    margin-bottom: 240px;
+  }
+  &__title {
+    @include text($ff, 700, 36px, 49px, $title);
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-bottom: 66px;
+  }
+}
+.swiper {
+  max-height: 560px;
+}

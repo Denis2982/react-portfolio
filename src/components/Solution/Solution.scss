@@ -1,0 +1,32 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.solution {
+  &__card {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+    margin-bottom: 275px;
+    &:nth-child(2n) .solution__image {
+      order: 2;
+    }
+    &:last-child {
+      margin-bottom: 216px;
+    }
+  }
+  &__desc {
+    max-width: 612px;
+  }
+  &__desc-title {
+    @include text($ff, 700, 16px, 16px, $title);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+  &__desc-text {
+    @include text($ff, 700, 32px, 54px, $white);
+    letter-spacing: -0.5px;
+  }
+}

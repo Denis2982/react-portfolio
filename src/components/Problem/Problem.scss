@@ -1,0 +1,19 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.problem {
+  &__container {
+    margin-bottom: 88px;
+  }
+  &__title {
+    @include text($ff, 700, 16px, 16px, $title);    
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+  &__text {
+    @include text($ff, 700, 32px, 54px, $title);    
+    letter-spacing: -0.5px;
+  }
+}

@@ -1,4 +1,7 @@
 import Covibe from "../../components/Covibe/Covibe";
+import Lounch from "../../components/Lounch/Lounch";
+import Problem from "../../components/Problem/Problem";
+import Solution from "../../components/Solution/Solution";
 import WorkImage from "../../components/WorkImage/WorkImage";
 
 export default function Works() {
@@ -6,6 +9,9 @@ export default function Works() {
     <>      
       <WorkImage />
       <Covibe />
+      <Problem />
+      <Lounch />
+      <Solution />
     </>
   )
 }

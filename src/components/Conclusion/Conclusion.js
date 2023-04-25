@@ -1,0 +1,16 @@
+import "./Conclusion.scss";
+import conclusionImg from '../../assets/conclusion.jpg';
+
+export default function Conclusion() {
+  return (
+    <div className="container conclusion">
+      <div className="conclusion__title">Conclusion</div>
+      <div className="conclusion__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae aenean
+        aliquet pellentesque lectus. Libero convallis velit, morbi nullam
+        pellentesque quis. Massa nascetur in commodo posuere porttitor.
+      </div>
+      <img src={conclusionImg} alt="conclusion" />
+    </div>
+  );
+}

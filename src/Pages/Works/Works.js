@@ -1,3 +1,5 @@
+import Case from "../../components/Case/Case";
+import Conclusion from "../../components/Conclusion/Conclusion";
 import Covibe from "../../components/Covibe/Covibe";
 import Lounch from "../../components/Lounch/Lounch";
 import Problem from "../../components/Problem/Problem";
@@ -12,6 +14,8 @@ export default function Works() {
       <Problem />
       <Lounch />
       <Solution />
+      <Conclusion />
+      <Case />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import "./Solution.scss";
-import solutionImg1 from '../../assets/solution1.png';
-import solutionImg2 from '../../assets/solution2.png';
+import solutionImg1 from "../../assets/solution1.png";
+import solutionImg2 from "../../assets/solution2.png";
+import WorkTitle from "../UI/WorkTitle/WorkTitle";
 
 export default function Solution() {
   return (
@@ -10,7 +11,7 @@ export default function Solution() {
           <img src={solutionImg1} alt="solution" />
         </div>
         <div className="solution__desc">
-          <div className="solution__desc-title">solution 1</div>
+          <WorkTitle title="solution 1" />
           <div className="solution__desc-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
@@ -21,7 +22,7 @@ export default function Solution() {
           <img src={solutionImg2} alt="solution" />
         </div>
         <div className="solution__desc">
-          <div className="solution__desc-title">solution 1</div>
+          <WorkTitle title="solution 1" />
           <div className="solution__desc-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>

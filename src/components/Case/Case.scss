@@ -1,0 +1,23 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.container {
+}
+.case {
+    margin-bottom: 153px;
+    a{
+        @include text($ff, 700, 32px, 54px, $title);        
+        text-align: center;
+        letter-spacing: -0.5px;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: $bgcase;
+            bottom: -10px;
+        }
+    }
+}

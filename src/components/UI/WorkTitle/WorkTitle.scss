@@ -1,0 +1,9 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.work__title {
+    @include text($ff, 700, 16px, 16px, $title);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;    
+}

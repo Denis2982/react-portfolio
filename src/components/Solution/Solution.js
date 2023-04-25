@@ -7,23 +7,39 @@ export default function Solution() {
   return (
     <div className="container solution">
       <div className="solution__card">
-        <div className="solution__image">
+        <div
+          className="solution__image"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+        >
           <img src={solutionImg1} alt="solution" />
         </div>
         <div className="solution__desc">
           <WorkTitle title="solution 1" />
-          <div className="solution__desc-text">
+          <div
+            className="solution__desc-text"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
         </div>
       </div>
       <div className="solution__card">
-        <div className="solution__image">
+        <div
+          className="solution__image"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+        >
           <img src={solutionImg2} alt="solution" />
         </div>
         <div className="solution__desc">
           <WorkTitle title="solution 1" />
-          <div className="solution__desc-text">
+          <div
+            className="solution__desc-text"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
         </div>

@@ -7,7 +7,8 @@ export default function Lounch() {
       <div className="container">
         <div className="lounch__title">launch prototype</div>
       </div>
-      <img src={lounchImg} alt="lounch" />
+      <img data-aos="fade-zoom-in" 
+      data-aos-duration="3000"   src={lounchImg} alt="lounch" />
     </div>
   );
 }

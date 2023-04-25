@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div className="footer__social">
           <a href="/">
-            <ViberIcon className="viber"/>
+            <ViberIcon />
           </a>
           <a href="/">
             <WorldIcon />

@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="header">
         <div className="container header__container">
-            <NavLink to="/" className="logo">
+            <NavLink to="/" className="logo" data-aos="flip-right" data-aos-duration="1500">
                 <LogoIcon />
                 <span>Logo Here</span>
             </NavLink>

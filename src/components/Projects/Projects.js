@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import "./Projects.scss";
 import "swiper/scss";
 import project1 from "../../assets/project1.png";
@@ -8,13 +8,14 @@ import project3 from "../../assets/project3.png";
 export default function Projects() {
   return (
     <div className="container project__container">
-      <div className="project__title">Personal Projects</div>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={24}
-        grabCursor={true}
-        loop={true}
+      <div
+        className="project__title"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       >
+        Personal Projects
+      </div>
+      <Swiper slidesPerView={3} spaceBetween={24} grabCursor={true} loop={true}>
         <SwiperSlide>
           <img src={project1} alt="slide" />
         </SwiperSlide>

@@ -14,7 +14,7 @@ export default function Work() {
       </a>
       <div className="work__inner">
         <div className="work__inner-column">
-          <div className="work__card-inner">
+          <div className="work__card-inner" data-aos="fade-right">
             <a href="/" className="work__card">
               <img src={work1} alt="" />
             </a>
@@ -22,7 +22,7 @@ export default function Work() {
               <div className="work__text">InVersion</div>
             </div>
           </div>
-          <div className="work__card-inner">
+          <div className="work__card-inner" data-aos="fade-right">
             <a href="/" className="work__card">
               <img src={work2} alt="" />
             </a>
@@ -32,7 +32,7 @@ export default function Work() {
           </div>
         </div>
         <div className="work__inner-column">
-        <div className="work__card-inner">
+        <div className="work__card-inner" data-aos="fade-left">
             <a href="/" className="work__card">
               <img src={work3} alt="" />
             </a>
@@ -40,7 +40,7 @@ export default function Work() {
               <div className="work__text">InVersion</div>
             </div>
           </div>
-          <div className="work__card-inner">
+          <div className="work__card-inner" data-aos="fade-left">
             <a href="/" className="work__card">
               <img src={work4} alt="" />
             </a>

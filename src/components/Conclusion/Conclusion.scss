@@ -3,13 +3,6 @@
 
 .conclusion {
     margin-bottom: 244px;
-  &__title {
-    @include text($ff, 700, 16px, 16px, $title);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 12px;
-  }
   &__desc {
     @include text($ff, 700, 32px, 54px, $title);
     letter-spacing: -0.5px;

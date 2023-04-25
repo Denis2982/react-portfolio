@@ -5,14 +5,6 @@
   &__inner {
     margin-bottom: 290px;
   }
-  &__title,
-  &__card-title {
-    @include text($ff, 700, 16px, 16px, $title);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 12px;
-  }
   &__desc {
     @include text($ff, 700, 32px, 48px, $title);
     letter-spacing: -0.5px;

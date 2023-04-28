@@ -1,28 +1,61 @@
-@import 'src/scss/vars';
-@import 'src/scss/mixins';
+@import "src/scss/vars";
+@import "src/scss/mixins";
 
 .about {
-    margin-top: 129px;
-    margin-bottom: 145px;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }	
-	&__title {
-        @include text($ff, 700, 54px, 64px, $title);        
-        letter-spacing: -0.5px;
-        margin-bottom: 24px;
-        max-width: 506px;
-	}
-	&__text {
-        @include text($ff, 600, 20px, 30px, $text);
-        letter-spacing: -0.5px;
-        margin-bottom: 88px;
-        max-width: 395px;
-	}
-	&__image {
-        padding-right: 106px;
-	}
+  margin-top: 129px;
+  margin-bottom: 145px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @include tablet {
+      padding-inline: 24px;
+    }
+    @include tablet-small {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 64px;
+        margin-bottom: 128px;
+      }
+  }
+  &__title {
+    @include text($ff, 700, 54px, 64px, $title);
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+    max-width: 506px;
+    @include tablet {
+      @include text($ff, 700, 40px, 46px, $title);
+    }
+    @include tablet-small{        
+        max-width: 100%;
+      }
+    @include mobile {
+      @include text($ff, 700, 36px, 40px, $title);
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    @include text($ff, 600, 20px, 30px, $text);
+    letter-spacing: -0.5px;
+    margin-bottom: 88px;
+    max-width: 395px;
+    @include tablet-small{        
+        max-width: 100%;
+      }
+    @include mobile {
+        @include text($ff, 600, 18px, 26px, $text);
+        margin-bottom: 48px;
+      }
+  }
+  &__image {
+    padding-right: 106px;
+    @include tablet {
+      padding-right: 0;
+    }
+    @include mobile {
+        width: 240px;
+      }
+  }
 }

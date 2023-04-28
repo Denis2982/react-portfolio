@@ -13,4 +13,7 @@
     span {
         @include text($ff, 600, 18px, 25px, $white);
     }
+    @include mobile {
+       padding: 16px 48px;
+      }
 }

@@ -4,14 +4,36 @@
 .project {
   &__container {
     margin-bottom: 240px;
+    @include tablet-small{
+      margin-bottom: 200px;
+    }
   }
   &__title {
     @include text($ff, 700, 36px, 49px, $title);
     text-align: center;
     letter-spacing: -0.5px;
     margin-bottom: 66px;
+    @include tablet-small{
+      @include text($ff, 700, 28px, 38px, $title);
+      margin-bottom: 34px;
+    }
   }
 }
 .swiper {
   max-height: 560px;
+}
+.swiper {
+  width: 320px;
+}
+
+@media screen and (min-width: 576px) {
+  .swiper {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 768px;
+  }
 }

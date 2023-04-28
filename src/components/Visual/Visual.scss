@@ -4,6 +4,9 @@
 .visual {
   &__container {
     margin-bottom: 240px;
+    @include tablet-small{
+      margin-bottom: 200px;
+    }
   }
   &__title {
     @include text($ff, 700, 36px, 49px, $title);
@@ -11,11 +14,23 @@
     text-align: center;
     letter-spacing: -0.5px;
     margin-bottom: 65px;
+    @include tablet-small{
+      grid-template-columns: 1fr;
+      @include text($ff, 700, 28px, 38px, $title);
+      margin-bottom: 34px;
+    }
   }
   &__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    @include tablet{
+      grid-template-columns: 1fr 1fr;
+    }
+    @include tablet-small{
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
   }
   &__card {
     border-radius: 4px;

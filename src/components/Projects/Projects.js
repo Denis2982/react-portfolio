@@ -15,7 +15,19 @@ export default function Projects() {
       >
         Personal Projects
       </div>
-      <Swiper slidesPerView={3} spaceBetween={24} grabCursor={true} loop={true}>
+      <Swiper slidesPerView={1} spaceBetween={24} grabCursor={true} loop={true}
+      breakpoints={{
+        // when window width is >= 640px
+        576: {
+          width: 576,
+          slidesPerView: 2,
+        },
+        // when window width is >= 768px
+        768: {
+          width: 768,
+          slidesPerView: 3,
+        },
+      }}>
         <SwiperSlide>
           <img src={project1} alt="slide" />
         </SwiperSlide>
